@@ -6,9 +6,7 @@ using namespace std;
 
 int main()
 {
-    // Adjacency matrix:
-    // 1 = direct resource-sharing connection
-    // 0 = no direct connection
+ 
     int graph[V][V] = {
         {0, 1, 1, 0, 1, 0},
         {1, 0, 1, 1, 0, 0},
@@ -27,7 +25,7 @@ int main()
         "Research Library"
     };
 
-    // Display the adjacency matrix.
+
     cout << "LIBRARY RESOURCE-SHARING NETWORK\n";
     cout << "\nAdjacency Matrix:\n\n";
     cout << "    A B C D E F\n";
@@ -44,7 +42,7 @@ int main()
         cout << '\n';
     }
 
-    // Display each undirected direct connection only once.
+
     cout << "\nDirect Connections Between Libraries:\n";
 
     int connectionCount = 0;
